@@ -94,7 +94,7 @@ sudo groupdel grupo                 # Eliminar grupo
 # Agregar usuario a grupo
 sudo usermod -aG developers devops
 
- # chmod - Modo octal 
+ # Permisos de archivos - chmod - Modo octal  
 
  # rwxr-xr-x = 755
 chmod 755 ./test.txt

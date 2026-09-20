@@ -17,5 +17,7 @@ opencode
 
 # si no llega a funcionar 
 export PATH="$HOME/.opencode/bin:$PATH"
+
+# por ultimo ejecutar opencode dentro del directorio
 opencode
 
