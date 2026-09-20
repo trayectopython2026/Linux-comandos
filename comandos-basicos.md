@@ -62,10 +62,10 @@ wc -l archivo.txt         # Contar líneas
 
 # eliminar
 
-rm archivo.txt                  # Eliminar archivo
-rm -r directorio/               # Eliminar directorio
-rm -rf directorio/              # Forzar (¡CUIDADO!)
-rmdir directorio_vacio/         # Solo directorios vacíos
+rm archivo.txt                  * Eliminar archivo
+rm -r directorio/               * Eliminar directorio
+rm -rf directorio/              * Forzar (¡CUIDADO!)
+rmdir directorio_vacio/         * Solo directorios vacíos
 
 # Usuario actual
 whoami
