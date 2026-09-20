@@ -7,10 +7,10 @@ pwd
 # ¿Qué hay acá?
 ls
 
-ls                  # Listar archivos
-ls -l               # Listar con detalles
-ls -a               # Incluir ocultos
-ls -alh             # Todo + tamaños legibles
+- `ls` — Listar archivos
+- `ls -l` — Listar con detalles
+- `ls -a` — Incluir archivos ocultos
+- `ls -alh` — Mostrar todo con tamaños legibles
 
 # Creamos nuestro espacio de trabajo
 mkdir curso_linux
@@ -46,26 +46,28 @@ df -h
 history
 
 
-# creacion de archivos
-touch archivo.txt          # Crear archivo vacío
-echo "texto" > archivo.txt     # Crear con contenido
-echo "más" >> archivo.txt      # Agregar contenido
+## Creación de archivos
 
-# mirar 
-cat archivo.txt           # Ver todo
-cat -n archivo.txt        # Con números de línea
-head archivo.txt          # Primeras 10 líneas
-head -n 5 archivo.txt     # Primeras 5 líneas
-tail archivo.txt          # Últimas 10 líneas
-tail -n 20 archivo.txt    # Últimas 20 líneas
-wc -l archivo.txt         # Contar líneas
+- `touch archivo.txt` — Crear archivo vacío
+- `echo "texto" > archivo.txt` — Crear con contenido
+- `echo "más" >> archivo.txt` — Agregar contenido
 
-# eliminar
+## Mirar
 
-rm archivo.txt                  * Eliminar archivo
-rm -r directorio/               * Eliminar directorio
-rm -rf directorio/              * Forzar (¡CUIDADO!)
-rmdir directorio_vacio/         * Solo directorios vacíos
+- `cat archivo.txt` — Ver todo
+- `cat -n archivo.txt` — Ver con números de línea
+- `head archivo.txt` — Ver las primeras 10 líneas
+- `head -n 5 archivo.txt` — Ver las primeras 5 líneas
+- `tail archivo.txt` — Ver las últimas 10 líneas
+- `tail -n 20 archivo.txt` — Ver las últimas 20 líneas
+- `wc -l archivo.txt` — Contar líneas
+
+## Eliminar
+
+- `rm archivo.txt` — Eliminar archivo
+- `rm -r directorio/` — Eliminar directorio
+- `rm -rf directorio/` — Forzar eliminación (**¡CUIDADO!**)
+- `rmdir directorio_vacio/` — Eliminar solo directorios vacíos
 
 # Usuario actual
 whoami
@@ -80,8 +82,8 @@ groups usuario
 
 # Crear usuario con home y shell
 sudo useradd -m -s /bin/bash devops
-# -m = crear directorio home
-# -s = shell por defecto
+### -m = crear directorio home
+### -s = shell por defecto
 
 # Eliminar usuario y su home
 sudo userdel -r frontend
@@ -104,11 +106,11 @@ chmod 644 ./test.txt
 chmod 700 ./test.txt
 
 # Permisos comunes:
-# 755 = Scripts ejecutables, directorios
-# 644 = Archivos normales
-# 600 = Archivos privados (llaves SSH)
-# 700 = Directorios privados (.ssh)
-# 777 = TODO el mundo puede TODO (¡EVITAR!)
+### 755 = Scripts ejecutables, directorios
+### 644 = Archivos normales
+### 600 = Archivos privados (llaves SSH)
+### 700 = Directorios privados (.ssh)
+### 777 = TODO el mundo puede TODO (¡EVITAR!)
 
 # Recursivo
 chmod -R 755 ./directorio/
